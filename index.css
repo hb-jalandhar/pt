@@ -1,0 +1,141 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw; 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+.title{
+    font-size: 35px;
+    margin: 3vh;
+    border : 7px dashed rgb(1,17,60);
+    border-radius : 20px;
+    padding: 1.5vh;
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    height: max-content;
+    width: 90%;
+    max-width: 350px;    
+    margin: 10px;
+    padding: 10px;    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.4) 0px 3px 8px ;
+}
+
+.image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.tour-info{
+    margin: 20px 5px;
+}
+.tour-price{
+    color: #1faa59;
+    font-size: 100%;
+}
+.description
+{
+    height: max-content;
+}
+.tour-name{
+    font-size: 110%;
+}
+.read-more{
+    color: #12b0e8;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-red{
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #b4161b;
+    background-color: #b4161b21;
+    font-weight: 600;
+}
+.tour-buttons{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-red:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.2s;
+}
+.refresh{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-refresh{
+    margin-top:18px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(179, 174, 175);
+    border-radius: 5px;
+}
+.btn-refresh:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+@media(max-width:350px)
+{
+    .title{
+        font-size: 18px;
+        margin: 2vh;
+        border : 5px dashed rgb(1,17,60);
+        border-radius : 10px;
+        padding: 1.5vh;
+    }
+    .description{
+        font-size: 3.5vw;
+    }
+    .image{
+        margin: 0 auto;
+    }
+    .tour-info{
+        margin : 5px 5px;
+    }
+    .btn-red{
+        font-size: 3vw;
+    }
+    .tour-details{
+        font-size: 5vw;
+    }
+}
